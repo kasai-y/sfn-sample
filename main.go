@@ -59,7 +59,7 @@ func action(_ *cli.Context) {
 		color.Red("%+v", err)
 	}
 
-	// ステートマシンの一覧を取得
+	// 実行の一覧を取得
 	listExecutions, err := c.ListExecutions(&sfn.ListExecutionsInput{
 		MaxResults:      nil,
 		NextToken:       nil,
